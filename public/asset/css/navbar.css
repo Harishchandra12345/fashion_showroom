@@ -1,0 +1,61 @@
+    /* Top navbar css */
+    .top_nav{
+        padding: 0px 30px;
+    }
+    .top_nav>.row{
+        border-bottom: 1px solid rgba(35, 15, 15, 0.151);
+    }
+    .brand_logo{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: small;
+        margin-top: 5%;
+    }
+    .brand_logo>li{
+      list-style-type: none;
+    }
+    .brand_logo>li>a{
+        text-decoration: none;
+        color: #0c234be4;
+    }
+    .brand_logo>li>a:hover{
+        color: #0c234b55;
+    }
+    .brand_name{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 3.2em;
+    }
+    .brand_name>a:hover{
+        color: #0c234b;
+    }
+    .brand_name>a{
+        color: #1294ad;
+    }
+    /* down nav */
+    .nav-item>a{
+        font-size: medium;
+        color:#09152c;
+        text-decoration: none;
+    }
+    .shop_down_btn{
+        font-size: 10px;
+        margin-left: 4px;
+    }
+    .shop_cart{
+        list-style-type: none;
+    }
+    .shop_cart>a{
+        color: #0c234b !important;
+        font-size: 20px;
+    }
+    .home_btn{
+        border-bottom: 1px solid #0000003d;
+    }
+    .dropdown-menu>li>a{
+        font-size: medium;
+        color:#09152c;
+    }
+    .navbar{
+        margin-bottom: 0%!important;
+    }
