@@ -17,8 +17,8 @@
                     <li class="col"> 
                         <a href="" class=""><i class="fa-brands fa-twitter"></i></a> 
                     </li>
-                    <li class="col" style="display: contents"> 
-                        <a href="" class="" ><i class="fa-brands fa-instagram"></i></a> 
+                    <li class="col"> 
+                        <a href="" class=""><i class="fa-brands fa-instagram"></i></a> 
                     </li>
                 </ul>
             </div>
@@ -118,7 +118,6 @@
             </div>
         </div>
     </div>
-    
 </nav>
 <script>
     $(document).ready(function() {

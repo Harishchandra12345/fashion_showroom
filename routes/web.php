@@ -27,3 +27,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+// Components route
+Route::get('/allproduct', [DevController::class, 'Homepage_products'])->name('allproduct');

@@ -18,17 +18,17 @@
         text-decoration: none;
         color: #0c234be4;
     }
-    .brand_logo>li>a:hover{
+    /* .brand_logo>li>a:hover{
         color: #0c234b55;
-    }
+    } */
     .brand_name{
         font-size: 13px;
         font-weight: 400;
         line-height: 3.2em;
     }
-    .brand_name>a:hover{
+    /* .brand_name>a:hover{
         color: #0c234b;
-    }
+    } */
     .brand_name>a{
         color: #1294ad;
     }
