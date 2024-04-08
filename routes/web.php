@@ -29,4 +29,5 @@ Route::middleware([
 });
 
 // Components route
-Route::get('/allproduct', [DevController::class, 'Homepage_products'])->name('allproduct');
+// Route::get('/allproduct', [HomeController::class, 'Homepage_products'])->name('allproduct');
+// Route::get('/Product', [HomeController::class,'Product'])->name('Product');

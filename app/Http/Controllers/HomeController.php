@@ -12,8 +12,10 @@ class HomeController extends Controller
     }
 
     // component functions 
-    Public function Homepage_products(Request $request){
-        dd("hello");
-        return view("components.productcomponent");
-    }
+    // Public function Homepage_products(Request $request){
+    //     return view("components.productcomponent");
+    // }
+    // Public function Product(Request $request){
+    //     return view("components.productcollection");
+    // }
 }

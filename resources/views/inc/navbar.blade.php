@@ -25,7 +25,7 @@
         </div>
     </div>
     <div id="navbar" class="navbar navbar-expand-lg  ">
-        <div class="container-fluid py-3">
+        <div class="container-fluid " style="padding: 0px 24px 0px 7px;">
             <div class="col-3" style="text-align: center">
                 {{-- <span>Aveda Retail</span> --}}
                 <img decoding="async" width="212" height="39" src="https://avada.website/retail/wp-content/uploads/sites/113/2021/04/retail-logo-svg.svg" alt="" style="margin-left: 5%;" class="img-responsive wp-image-3583 disable-lazyload">
