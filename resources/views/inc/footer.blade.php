@@ -17,7 +17,7 @@
 <footer class="">
     <div class="container-fluid" style="padding: 20px">
         <div class="row" style="background-color: #f8f5ef; padding:35px;">
-            <div class="col-md-3 col-sm-12" style="padding-top: 35px;">
+            <div class="col-md-3 col-sm-6" style="padding-top: 35px;">
                 <div class="foot-btn">
                     <p >More about Avada Retail</p>
                 </div>
@@ -28,7 +28,7 @@
 
                 </div>
             </div>
-            <div class="col-md-2 col-sm-12" style="padding-top: 35px;">
+            <div class="col-md-2 col-sm-6" style="padding-top: 35px;">
                <div class="foot-btn">
                     <p>Shop</p>
                </div>

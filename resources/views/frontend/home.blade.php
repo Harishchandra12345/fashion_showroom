@@ -4,6 +4,9 @@
         /* .home_img:hover{
         margin: 3%;
         } */
+        .hero{
+            padding-top: 40px;
+        }
         .hero_img{
             width: -webkit-fill-available; 
             aspect-ratio: 2 / 1;
@@ -50,6 +53,7 @@
             text-decoration: none;
             display: grid;
             color: black;
+            z-index: 999;
             background-color: white;
             box-shadow: inset 0px 0px 20px whitesmoke;
             padding: 1%;
@@ -64,6 +68,7 @@
             background-color: white;
             box-shadow: inset 0px 0px 20px whitesmoke;
             padding: 1%;
+            z-index: 999;
             position: fixed;
             border-radius: 7px;
             top: 275px;
@@ -87,8 +92,79 @@
             border-radius: 2px;
             margin-left: 3%;
         }
-        /* floating button css */
+        .apolo_img{
+            width: -webkit-fill-available; 
+            aspect-ratio: 1/ 1.4;
+        }
+        .paxel_img{
+            width: -webkit-fill-available; 
+            aspect-ratio: 1/0.70;
+        }
+         /* floating button css */
+        /* blog section css */
+        .latest{
+            color: white;
+            font-size: 33px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .more-text{
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 100;
+        }
+        .blog_img{
+            width: -webkit-fill-available; 
+            aspect-ratio: 1.2/.75;
+            padding: 10px;
+        }
+        .brand_shop{
+            width: 300px;
+            margin-left: 2%;
+            background-color: #0d244c;
+            padding: 9px;
+            position: relative;
+            bottom: 125px;
+            color: white;
+            font-size: 25px;
+            display: grid;
+            font-weight: 700;
+        }
+        .brand_shop:hover{
+            color: white;
+            text-decoration: none;
+        }
+        .brand_shop>span{
+            padding-left: 40px;
+        }
+        .artical{
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 15px;
+            position: relative;
+            bottom: 122px;
+            padding-left: 45px;
+        }
+        .artical:hover{
+            text-decoration: none;
+            color: yellowgreen;;
+        }
+        /* blog section css */
+        /* product category section css */
+        .pro_category{
+            font-size: 21px;
+            font-weight: 600;
+            text-align: center;
+        }
+        /* product category section css */
+       
         /* product component css */
+        .latest_product{
+            font-size: 23px;
+            padding-bottom: 25px;
+        }
         .component_part{
             text-align: start;
             padding-left: 6%;
@@ -153,19 +229,25 @@
                 </a>
             </div>
             <div class="row">
-                <div class="col-md-6 col-sm-12" style="padding:0; background-color: #0d244c;">
+                <div class="col-md-6 col-sm-12" style="padding:0;" >
                     <img class="hero_img" src="./img/pexels-juan.jpg" alt="">
+                </div>
+                <div class="col-md-6" style="padding:0; background-color: #0d244c;">
+                    <img class="hero_img" src="./img/pexels-andrea.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12" style="padding:0; background-color: #0d244c;">
                     <span class="img_name">Shop women</span>
                     <span class="img_content">If you're looking to add shop-related </span>
                     <span class="img_content"> content to your website.</span>
                     <a href="" class="view_collection">View women's collection</a>
-                    <input type="search" style="    color: black;
+                    <input type="search" style="color: black;
                     z-index: 999;
                     border: opx;
                     border: 0px;" name="search" value="" placeholder="Search  all productsin our store..." required>
                 </div>
-                <div class="col-md-6" style="padding:0; background-color: #0d244c;">
-                    <img class="hero_img" src="./img/pexels-andrea.jpg" alt="">
+                <div class="col-md-6 col-sm-12" style="padding:0; background-color: #0d244c;">
                     <span class="img_name">Shop men</span>
                     <span class="img_content">If you're looking to add shop-related </span>
                     <span class="img_content"> content to your website.</span>
@@ -173,11 +255,10 @@
                     <div class="" style="  z-index: 999;
                     color: white;
                     font-size: 25px;">
-                        <span>Shop Women</span>
-                        <span>Shop Women</span>
-                        <span>Shop Women</span>
-                        <span>Shop Women</span>
-                    </div>
+                    <span>Shop Women</span>
+                    <span>Shop Women</span>
+                    <span>Shop Women</span>
+                    <span>Shop Women</span>
                 </div>
             </div>
         </div>
@@ -201,18 +282,18 @@
             </div>
             <div class="">
                 <p style="text-align: center;
-                font-size: 20px;">
-                    <a style="color: black;" href="#">Buy Avada theme today!</a>
+                font-size: 20px; padding-bottom:85px;">
+                    <a style="color: black; " href="#">Buy Avada theme today!</a>
                 </p>
-            </div>
-            <div class="">
-                <h2 class="" style="font-size: 25px;padding-bottom: 20px;">Latest products</h2>
             </div>
         </div>
     </section>
     {{-- allproduct section --}}
     <section style="padding-top: 40px;">
         <div class="container-fluid" style="padding:0px 30px">
+            <div class="">
+                <h1 class="latest_product">Latest products</h1>
+            </div>
             <div class="percent_price_btn">
                 <a href="" class="num_btn">
                     <span>-33%</span>
@@ -345,17 +426,128 @@
        </div>
     </section>
     {{-- endproduct collection section --}}
-    {{-- <section style="padding-top: 95px;">
-        <div class="container-fluid" style="padding: 20px">
+    {{-- section --}}
+    <section style="padding-top: 95px;">
+        <div class="container-fluid" style="padding: 13px">
             <div class="row">
-                <div class="col-6">
-                    <x-prodectcollection />
+                <div class="col-md-6 col-sm-12" >
+                    <a href="" class="">
+                        <img class="apolo_img" src="./img/apologizes.jpg" alt="" >
+                    </a> 
                 </div>
-                <div class="col-6">
-                    <x-prodectcollection />
+                <div class="col-md-6 col-sm-6" style="padding-left: 30px;">
+                    <a href="" class="">
+                        <img class="paxel_img" src="./img/pexels-andrea.jpg" alt="" >
+                    </a> 
+                    <a href="" class="">
+                        <img class="paxel_img" src="./img/pexels-juan.jpg" alt="" style="margin-top: 34px;">
+                    </a>
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
+    {{-- end section --}}
+    {{-- blog section --}}
+    <section style="padding-top: 60px;">
+        <div class="container-fluid" style="padding: 20px;">
+            <div class="row" style="background-color:#0d244c">
+                <div class="col-md-12 col-sm-12" style="padding-top: 100px; padding-bottom: 40px;">
+                   <p class="latest">Latest from the blog</p>
+                   <p class="more-text">Morbi leo sagittis placerat sem nisl tincidunt nulla.</p>
+                </div>
+            </div>
+            <div class="row" style="background-color:#0d244c; ">
+                <div class="col-md-4 col-sm-12"  >
+                    <a href="" class="">
+                        <img  class="blog_img" src="https://avada.website/retail/wp-content/uploads/sites/113/2021/03/blog-7.jpg" alt="blog-7"  data-sizes="auto" sizes="361px">
+                    </a> 
+                    <a  href=" " style="text-decoration: none; ">
+                        <div class="brand_shop">
+                            <div style="padding: 26px;">
+                                <span>6 brands to shop</span>
+                                <span>for a fresh start</span>
+                                <span>this spring</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a  href="" class="artical" style="bottom: 107px;">
+                        Read artical<i style="margin-left: 2%;" class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12" >
+                    <a href="" class="">
+                        <img class="blog_img" src="https://avada.website/retail/wp-content/uploads/sites/113/2021/03/blog-5.jpg" data-sizes="auto" sizes="361px">
+                    </a> 
+                    <a  href=" " style="text-decoration: none; ">
+                        <div class="brand_shop">
+                            <div style="padding: 26px;">
+                                <span>Cute valentines</span>
+                                <span>day gifts for him </span>
+                                <p> or her</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a  href="" class="artical">
+                        Read artical<i style="margin-left: 2%;" class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12" >
+                    <a href="" class="">
+                        <img class="blog_img"  src="https://avada.website/retail/wp-content/uploads/sites/113/2021/02/blog-3.jpg" alt="blog-3" data-sizes="auto" sizes="361px">
+                    </a> 
+                    <a  href=" " style="text-decoration: none; ">
+                        <div class="brand_shop">
+                            <div style="padding: 26px;"> 
+                                <span>Street style</span>
+                                <span>lookbook – 2021</span>
+                                <p> Edition</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a  href="" class="artical">
+                        Read artical<i style="margin-left: 2%;" class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- end blog section --}}
+    {{-- category section --}}
+    <section>
+        <div class="container-fluid" style="padding-top:65px;">
+            <div class="row" style="padding: 20px;">
+                <div class="col-md-12 col-sm-12">
+                    <p class="pro_category">Browser by category</p>
+                </div>
+            </div>
+            <div class="row" style="padding: 7px;">
+                <div class="col-md-2 col-sm-12 ">
+                    <x-product_category />
+                    <p style="text-align: center;
+                    font-size: 20px;
+                    font-weight: 500;
+                    padding-top: 20px;">Women<span style="font-size: 14px;
+    font-weight: 300;
+    margin-left: 14px;">10</span></p>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <x-product_category />
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <x-product_category />
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <x-product_category />
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <x-product_category />
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <x-product_category />
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- category section --}}
     {{-- hero section --}}
 @endsection
