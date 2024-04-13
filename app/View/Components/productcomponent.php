@@ -11,9 +11,11 @@ class productcomponent extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(
+        public string $themePrice="",
+    )
     {
-        //
+        $this->$themePrice = $themePrice;  
     }
 
     /**

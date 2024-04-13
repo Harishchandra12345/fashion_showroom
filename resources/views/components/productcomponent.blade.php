@@ -10,6 +10,6 @@
         /* padding: 2%; */
     }
 </style>
-<a href="" class="">
-    <img class="product_img" src="./img/apologizes.jpg" alt="" >
-</a> 
+    <a href="" class="">
+        <img class="product_img" src="./img/apologizes.jpg" alt="" >
+    </a> 
